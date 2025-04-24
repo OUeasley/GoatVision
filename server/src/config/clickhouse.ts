@@ -3,7 +3,7 @@ import { createClient, ClickHouseClient } from '@clickhouse/client';
 const client: ClickHouseClient = createClient({
   host: process.env.CLICKHOUSE_HOST || 'http://localhost:8123',
   username: process.env.CLICKHOUSE_USER || 'default',
-  password: process.env.CLICKHOUSE_PASSWORD || '',
+  password: process.env.CLICKHOUSE_PASSWORD || 'default',
   database: process.env.CLICKHOUSE_DB || 'goatvision',
 });
 
